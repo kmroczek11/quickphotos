@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Get And Upload Photos Extension",
+  "description": "Kopiowanie zdjęć z ogłoszenia pochodzącego z portalu otomoto.pl do większości formularzy innych portali",
+  "version": "1.0.0",
+  "icons": {
+    "128": "128.png"
+  },
+  "browser_action": {
+    "default_icon": "128.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": ["downloads", "tabs", "<all_urls>"]
+}
